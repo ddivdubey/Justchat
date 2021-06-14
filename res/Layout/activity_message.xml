@@ -1,0 +1,114 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall2"
+    android:fitsSystemWindows="true">
+
+    <!-- Layout for content is here. This can be a RelativeLayout  -->
+
+    <!-- RecyclerView -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@android:color/white">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageview_profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/usernamey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="clip_vertical|start"
+            android:padding="5dp"
+            android:text="TextView" />
+
+        <!--        <ImageButton-->
+        <!--            android:id="@+id/btn_call"-->
+        <!--            android:layout_width="15dp"-->
+        <!--            android:layout_height="25dp"-->
+        <!--            android:layout_marginLeft="200dp"-->
+        <!--            android:background="@drawable/ic_baseline_call_24" />-->
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar3"
+        android:clickable="true">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_corner"
+        android:padding="5dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <EditText
+            android:id="@+id/text_send"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:textAlignment="inherit"
+            android:layout_toLeftOf="@+id/btn_send"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/btn_sendfile"
+            android:background="@drawable/wall2"
+            android:hint="Type a Message..." />
+
+        <ImageButton
+            android:id="@+id/btn_send"
+            android:layout_width="27dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_baseline_send_24_orange" />
+
+        <ImageButton
+            android:id="@+id/btn_sendfile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_baseline_folder_24_orange" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
