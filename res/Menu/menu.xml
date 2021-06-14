@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/Group_Chat"
+        android:title="Group Chat"
+        app:showAsAction="withText"
+        android:orderInCategory="100"
+        />
+
+    <item
+        android:id="@+id/scanImage"
+        android:title="Scan Image"
+        app:showAsAction="withText"
+        android:orderInCategory="100"
+        />
+    <item
+        android:id="@+id/Translate_menu"
+        android:title="Translate Text"
+        app:showAsAction="withText"
+        android:orderInCategory="100"
+        />
+
+    <item
+        android:id="@+id/Help"
+        android:title="Help"
+        app:showAsAction="withText"
+        android:orderInCategory="100">
+
+    </item>
+    <item
+        android:id="@+id/About"
+        android:title="About"
+        app:showAsAction="withText"
+        android:orderInCategory="100"
+        />
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        app:showAsAction="withText"
+        android:orderInCategory="100"
+        />
+
+</menu>
